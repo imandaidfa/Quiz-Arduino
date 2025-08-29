@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning</title>
+    <!-- Use Tailwind CSS for a modern, responsive design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+    <div class="flex items-center justify-center min-h-screen p-4">
+        <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-xl w-full max-w-full">
+            <!-- Header -->
+            <h1 class="text-3xl font-bold text-center mb-6">Learning And Answer</h1>
+            
+            <!-- Link Navigation for both iFrames -->
+            <div class="flex flex-col md:flex-row justify-between gap-4 mb-6">
+                <!-- Links for the Left iFrame -->
+                <div class="flex-1 flex flex-col items-center">
+                    <h2 class="text-xl font-semibold mb-2 text-center">Modul Pembelajaran</h2>
+                    <div class="flex flex-wrap justify-center gap-2">
+                        <!-- Links target the "iframe-left" name -->
+                        <a href="https://drive.google.com/file/d/1pQ2qZ0DFWCnU9F3h6aDD_i9zt46qFZrG/view" target="iframe-left" class="inline-block px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-full transition-all duration-300 transform hover:scale-105">
+                            Apa Itu Arduino? Sejarah, Fitur, dan Projek untuk Pemula
+                        </a>                    
+                    </div>
+                </div>
+
+                <!-- Links for the Right iFrame -->
+                <div class="flex-1 flex flex-col items-center">
+                    <h2 class="text-xl font-semibold mb-2 text-center">Form Isian Untuk Menjawab</h2>
+                    <h5 class="text-sm font-reguler mb-2 text-center">Language pilih Plain Text</h5>
+                    <div class="flex flex-wrap justify-center gap-2">
+                        <!-- Links target the "iframe-right" name -->
+                        <a href="https://student-code-exercise.netlify.app/" target="iframe-right" class="inline-block px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-full transition-all duration-300 transform hover:scale-105">
+                            Student Code Exercise
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Two iFrames -->
+            <div class="flex flex-col md:flex-row justify-between gap-4">
+                <!-- Left iFrame -->
+                <iframe
+                    name="iframe-left"
+                    src="about:blank"
+                    class="w-full md:w-1/2 h-[500px] border border-gray-300 dark:border-gray-700 rounded-lg shadow-inner"
+                    title="Left Content Frame"
+                >
+                    <p>Your browser does not support iframes.</p>
+                </iframe>
+                
+                <!-- Right iFrame -->
+                <iframe
+                    name="iframe-right"
+                    src="about:blank"
+                    class="w-full md:w-1/2 h-[500px] border border-gray-300 dark:border-gray-700 rounded-lg shadow-inner"
+                    title="Right Content Frame"
+                >
+                    <p>Your browser does not support iframes.</p>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
